@@ -13,6 +13,7 @@
 		7C993396239DD93E00A63EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C993394239DD93E00A63EF4 /* Main.storyboard */; };
 		7C993398239DD93F00A63EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C993397239DD93F00A63EF4 /* Assets.xcassets */; };
 		7C99339B239DD93F00A63EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C993399239DD93F00A63EF4 /* LaunchScreen.storyboard */; };
+		7C9933A4239DFF7B00A63EF4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9933A3239DFF7B00A63EF4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		7C993397239DD93F00A63EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C99339A239DD93F00A63EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C99339C239DD93F00A63EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C9933A3239DFF7B00A63EF4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7C9933A5239EC00100A63EF4 /* Onde Estou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Onde Estou.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9933A4239DFF7B00A63EF4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				7C99338D239DD93E00A63EF4 /* Onde Estou */,
 				7C99338C239DD93E00A63EF4 /* Products */,
+				7C9933A2239DFF7B00A63EF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,7 @@
 		7C99338D239DD93E00A63EF4 /* Onde Estou */ = {
 			isa = PBXGroup;
 			children = (
+				7C9933A5239EC00100A63EF4 /* Onde Estou.entitlements */,
 				7C99338E239DD93E00A63EF4 /* AppDelegate.swift */,
 				7C993390239DD93E00A63EF4 /* SceneDelegate.swift */,
 				7C993392239DD93E00A63EF4 /* ViewController.swift */,
@@ -65,6 +71,14 @@
 				7C99339C239DD93F00A63EF4 /* Info.plist */,
 			);
 			path = "Onde Estou";
+			sourceTree = "<group>";
+		};
+		7C9933A2239DFF7B00A63EF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C9933A3239DFF7B00A63EF4 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,15 +298,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Onde Estou/Onde Estou.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 48444M743Y;
 				INFOPLIST_FILE = "Onde Estou/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "felipe.intrack.tech.Onde-Estou";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe.udemy.onde-estou";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +321,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Onde Estou/Onde Estou.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 48444M743Y;
 				INFOPLIST_FILE = "Onde Estou/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "felipe.intrack.tech.Onde-Estou";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "felipe.udemy.onde-estou";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
